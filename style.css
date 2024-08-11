@@ -1,0 +1,26 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.container {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1px;
+}
+
+.container div {
+  background-color: blue;
+}
+
+.item_1 {
+  grid-column: 1 / span 2;
+}
+
+.item_4 {
+  grid-row: 2 / span 2;
+}
